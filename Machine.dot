@@ -1,0 +1,48 @@
+strict digraph graphname {
+
+0 [label="program"]
+1 [label=" int "]; 
+0 -> 1 ; 
+2 [label=" main "]; 
+0 -> 2 ; 
+3 [label=" ( "]; 
+0 -> 3 ; 
+4 [label=" ) "]; 
+0 -> 4 ; 
+5 [label=" { "]; 
+0 -> 5 ; 
+6 [label=" statements1 "]; 
+0 -> 6 ; 
+7 [label=" declaration1 "]; 
+6 -> 7 ; 
+8 [label=" int "]; 
+7 -> 8 ; 
+9 [label=" = "]; 
+7 -> 9 ; 
+10 [label=" i "]; 
+9 -> 10 ; 
+11 [label=" 45 "]; 
+9 -> 11 ; 
+12 [label=" ; "]; 
+7 -> 12 ; 
+13 [label=" statement2 "]; 
+6 -> 13 ; 
+14 [label=" function_call3 "]; 
+13 -> 14 ; 
+15 [label=" print_function1 "]; 
+14 -> 15 ; 
+16 [label=" printf "]; 
+15 -> 16 ; 
+17 [label=" ( "]; 
+15 -> 17 ; 
+18 [label=" i "]; 
+15 -> 18 ; 
+19 [label=" ) "]; 
+15 -> 19 ; 
+20 [label=" ; "]; 
+13 -> 20 ; 
+21 [label=" } "]; 
+0 -> 21 ; 
+
+
+}

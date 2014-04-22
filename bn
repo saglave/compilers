@@ -1,0 +1,81 @@
+Classfile /home/milind/Downloads/compilers-master/project/example.class
+  Last modified 17 Apr, 2014; size 353 bytes
+  MD5 checksum 37eb232d49731344e702e6ace9229326
+  Compiled from "example.java"
+public class example
+  SourceFile: "example.java"
+  minor version: 0
+  major version: 51
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #4.#14         //  java/lang/Object."<init>":()V
+   #2 = Methodref          #3.#15         //  example.fun:(IF)I
+   #3 = Class              #16            //  example
+   #4 = Class              #17            //  java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Utf8               Code
+   #8 = Utf8               LineNumberTable
+   #9 = Utf8               fun
+  #10 = Utf8               (IF)I
+  #11 = Utf8               main
+  #12 = Utf8               SourceFile
+  #13 = Utf8               example.java
+  #14 = NameAndType        #5:#6          //  "<init>":()V
+  #15 = NameAndType        #9:#10         //  fun:(IF)I
+  #16 = Utf8               example
+  #17 = Utf8               java/lang/Object
+{
+  public example();
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0       
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return        
+      LineNumberTable:
+        line 2: 0
+
+  public static int fun(int, float);
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=3, args_size=2
+         0: iconst_1      
+         1: istore_0      
+         2: fconst_2      
+         3: fstore_1      
+         4: bipush        45
+         6: istore_2      
+         7: iload_2       
+         8: ireturn       
+      LineNumberTable:
+        line 4: 0
+        line 5: 2
+        line 7: 4
+        line 8: 7
+
+  public static void main();
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=5, args_size=0
+         0: iconst_5      
+         1: istore_0      
+         2: bipush        6
+         4: istore_1      
+         5: bipush        10
+         7: istore_3      
+         8: bipush        11
+        10: istore        4
+        12: iload_3       
+        13: iload         4
+        15: i2f           
+        16: invokestatic  #2                  // Method fun:(IF)I
+        19: istore_2      
+        20: return        
+      LineNumberTable:
+        line 11: 0
+        line 12: 5
+        line 13: 8
+        line 14: 12
+        line 15: 20
+}
